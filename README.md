@@ -1,12 +1,11 @@
 # ExamenBlancDesignPattern
-Ã‰tape 1 : Diagramme De classe :
+Étape 1 : Diagramme De classe :
+J’ai déployé plusieurs Design Pattern :
+-Composite : j’ai déployé ce design pattern entre la classe abstraite Dessin et les classes (rectangle, cercle, groupe figures) qui <<EXTEND>> de Dessin . J’ai opté pour ce choix de design Pattern car un dessin peut contenir un ou plusieurs cercles ou rectangles donc il apparaît légitime d’utiliser Le Design Composite 
+-Observer : Il est légitime d’utiliser ce Pattern car à chaque fois l’ObjetParamétrage change toutes les figures doivent être notifié et mis à jour 
+-Strategy : Car la méthode <<traiter>> va avoir plusieurs implémentations interchangeables.
 
-Jâ€™ai dÃ©ployÃ© plusieurs Design Pattern :
+Étape 2 : Implémentation :
+Classe Point :
 
--Composite : jâ€™ai dÃ©ployÃ© ce design pattern entre la classe abstraite Dessin et les classes (rectangle, cercle, groupe figures) qui <<EXTEND>> de Dessin . Jâ€™ai optÃ© pour ce choix de design Pattern car un dessin peut contenir un ou plusieurs cercles ou rectangles donc il apparaÃ®t lÃ©gitime dâ€™utiliser Le Design Composite
 
- -Observer : Il est lÃ©gitime dâ€™utiliser ce Pattern car Ã  chaque fois lâ€™ObjetParamÃ©trage change toutes les figures doivent Ãªtre notifiÃ© et mis Ã  jour
-
-  -Strategy : Car la mÃ©thode <<traiter>> va avoir plusieurs implÃ©mentations interchangeables.
-
-![Diagramme De classe](https://user-images.githubusercontent.com/85801662/198577028-5c217fae-00cf-4bc0-95de-7c98c4ddd3e0.jpg)
