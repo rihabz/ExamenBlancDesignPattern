@@ -1,7 +1,15 @@
-public class Point {
-    public Point(double x, double y) {
+import java.io.Serializable;
+
+public class Point implements Serializable {
+    private double x;
+    private double y;
+
+    public Point(double x, double y)  {
         this.x = x;
         this.y = y;
+    }
+
+    public Point() {
     }
 
     public double getX() {
@@ -20,6 +28,11 @@ public class Point {
         this.y = y;
     }
 
-    private double x;
-    private double y;
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

@@ -1,3 +1,3 @@
 public interface ITraitement {
-    void traiter();
+    public void traiter();
 }

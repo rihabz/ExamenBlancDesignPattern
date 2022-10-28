@@ -1,20 +1,39 @@
-public class Rectangle extends Dessin{
-    private Point pointSupérieur;
+public class Rectangle extends Dessin {
+    private Point coinGauche;
     private double largeur;
     private double hauteur;
 
-    public Rectangle(Point pointSupérieur, double largeur, double hauteur) {
-        this.pointSupérieur = pointSupérieur;
+    @Override
+    double perimetre() {
+        return (hauteur+largeur)*2;
+    }
+
+    @Override
+    double surface() {
+        return largeur*hauteur;
+    }
+
+    @Override
+    void update(ParametrageObsarvable po) {
+
+        System.out.println("l'etat est changée");
+    }
+
+    public Rectangle(Point coinGauche, double largeur, double hauteur) {
+        this.coinGauche = coinGauche;
         this.largeur = largeur;
         this.hauteur = hauteur;
     }
 
-    public Point getPointSupérieur() {
-        return pointSupérieur;
+    public Rectangle() {
     }
 
-    public void setPointSupérieur(Point pointSupérieur) {
-        this.pointSupérieur = pointSupérieur;
+    public Point getCoinGauche() {
+        return coinGauche;
+    }
+
+    public void setCoinGauche(Point coinGauche) {
+        this.coinGauche = coinGauche;
     }
 
     public double getLargeur() {
@@ -33,4 +52,12 @@ public class Rectangle extends Dessin{
         this.hauteur = hauteur;
     }
 
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "coinGauche=" + coinGauche +
+                ", largeur=" + largeur +
+                ", hauteur=" + hauteur +
+                '}';
+    }
 }
