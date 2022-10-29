@@ -2,8 +2,8 @@ import java.io.FileNotFoundException;
 
 public class App {
     public static void main(String[] args) throws FileNotFoundException {
-        Point p1=new Point(2,1);
-        Point p2=new Point(0,1);
+        Point p1=new Point(3,2);
+        Point p2=new Point(1,2);
 //Design pattern Composite
         Figures root=new Figures();
         Figures figure=new Figures();
@@ -32,7 +32,7 @@ public class App {
         Cercle c1=new Cercle(p2,2);
         Rectangle r1=new Rectangle(p1,4,3);
         System.out.println("--------Changement d'état------");
-        observable.setBorderColor(167772515);
+        observable.setBorderColor(654772515 );
         observable.addObserver(c1);
         observable.addObserver(r1);
         observable.setBorderSize(12);*/
