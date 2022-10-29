@@ -4,7 +4,7 @@ public class App {
     public static void main(String[] args) throws FileNotFoundException {
         Point p1=new Point(3,2);
         Point p2=new Point(1,2);
-//Design pattern Composite
+//Test Composite
         Figures root=new Figures();
         Figures figure=new Figures();
 
@@ -26,7 +26,8 @@ public class App {
         Rectangle r1=new Rectangle(p1,4,3);
         System.out.println("Le perimetre du rect: "+r1.perimetre());
         System.out.println("La surface du rect: "+r1.surface());*/
-//Design pattern Observer
+
+//Test Observer
 
         /* ParametrageObsarvableImpl observable= new ParametrageObsarvableImpl();
         Cercle c1=new Cercle(p2,2);
@@ -36,7 +37,9 @@ public class App {
         observable.addObserver(c1);
         observable.addObserver(r1);
         observable.setBorderSize(12);*/
-//Design pattern Strategy
+
+//Test Strategy
+
         Point p3=new Point(0,1);
         Dessin dessin=new Cercle(p3,2);
         dessin.setTraiter(new ITraitementImpl1());
