@@ -16,7 +16,7 @@ public class Rectangle extends Dessin {
     @Override
     void update(ParametrageObsarvable po) {
 
-        System.out.println("l'etat est changée");
+        System.out.println("les paramètres ont changé");
     }
 
     public Rectangle(Point coinGauche, double largeur, double hauteur) {
