@@ -55,7 +55,7 @@ public class Rectangle extends Dessin {
     @Override
     public String toString() {
         return "Rectangle{" +
-                "coinGauche=" + coinGauche +
+                "point supérieur gauche=" + coinGauche +
                 ", largeur=" + largeur +
                 ", hauteur=" + hauteur +
                 '}';
